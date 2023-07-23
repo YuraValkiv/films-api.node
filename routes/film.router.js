@@ -9,6 +9,7 @@ router.get("/one/:id", filmController.getFilm);
 router.put('/edit', filmController.editFilm);
 router.delete('/delete/:id', filmController.deleteFilm);
 router.post("/add/:id/:rating", ratingController.addRatingToFilmById);
+router.get("/tags/:tags", filmController.searchFilmByTag);
 
 
 module.exports = router;

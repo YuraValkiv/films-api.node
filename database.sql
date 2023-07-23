@@ -3,6 +3,7 @@ CREATE table film
     id          SERIAL PRIMARY KEY,
     name        varchar(255),
     description text,
+    url varchar,
     rating      int CHECK (rating >= 0 AND rating <= 5) default 0
 );
 
